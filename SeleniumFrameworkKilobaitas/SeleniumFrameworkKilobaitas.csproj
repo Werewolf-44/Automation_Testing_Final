@@ -60,6 +60,7 @@
   <ItemGroup>
     <Compile Include="LoginHelper.cs" />
     <Compile Include="Pages\LogoutPage.cs" />
+    <Compile Include="Pages\ProfilePage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

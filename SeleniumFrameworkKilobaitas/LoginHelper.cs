@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium;
+﻿using NUnit.Framework;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using System;
 using System.Threading;
@@ -54,5 +55,9 @@ public class LoginHelper
         EnterUsername();
         EnterPassword();
         ClickLoginButtonAgain();
+        IWebElement element = driver.FindElement(By.Id("ctl10_lblUdpSageMesageDetail"));
+        string actualText = element.Text;
+        string expectedText = "Prisijungta";
+        Assert.That(actualText, Is.EqualTo(expectedText));
     }
 }
