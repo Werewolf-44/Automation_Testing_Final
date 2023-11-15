@@ -47,6 +47,14 @@ public class LoginHelper
         loginButtonAgain.Click();
     }
 
+    public void ConfirmLogin()
+    {
+        IWebElement element = driver.FindElement(By.Id("ctl10_lblUdpSageMesageDetail"));
+        string actualText = element.Text;
+        string expectedText = "Prisijungta";
+        Assert.That(actualText, Is.EqualTo(expectedText));
+    }
+
     // New method to perform login
     public void PerformLogin()
     {
@@ -55,9 +63,6 @@ public class LoginHelper
         EnterUsername();
         EnterPassword();
         ClickLoginButtonAgain();
-        IWebElement element = driver.FindElement(By.Id("ctl10_lblUdpSageMesageDetail"));
-        string actualText = element.Text;
-        string expectedText = "Prisijungta";
-        Assert.That(actualText, Is.EqualTo(expectedText));
+        ConfirmLogin();
     }
 }

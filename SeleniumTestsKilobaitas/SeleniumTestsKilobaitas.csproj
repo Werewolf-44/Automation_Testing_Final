@@ -61,6 +61,7 @@
     <Compile Include="LogoutPageTests.cs" />
     <Compile Include="ProfilePageTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SearchPageTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
