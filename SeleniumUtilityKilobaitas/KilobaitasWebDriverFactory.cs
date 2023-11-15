@@ -5,11 +5,13 @@ using OpenQA.Selenium.Chrome;
 public class KilobaitasWebDriverFactory
 {
     protected IWebDriver driver;
+    protected LoginHelper loginHelper;  // Change the variable name
 
     [SetUp]
     public void SetupTest()
     {
         driver = new ChromeDriver();
+        loginHelper = new LoginHelper(driver);  // Change the variable assignment
         driver.Manage().Window.Maximize();
     }
 
