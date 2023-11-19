@@ -66,9 +66,9 @@ public class CartPage
     
     public void ConfirmCart()
     {
-        IWebElement element = driver.FindElement(By.XPath("//*[@id=\"lytA_ctl19_CartFull\"]/div[1]/div[1]/h2"));
+        IWebElement element = driver.FindElement(By.XPath("//*[@id=\"shopping-cart-table\"]/tbody/tr/td[2]/span[2]"));
         string actualText = element.Text;
-        string expectedText = "Prekių krepšelis";
+        string expectedText = "QQ2-00012";
         Assert.That(actualText, Is.EqualTo(expectedText));
     }
 
