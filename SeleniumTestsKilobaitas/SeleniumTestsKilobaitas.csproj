@@ -58,6 +58,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CartPageTest.cs" />
     <Compile Include="LogoutPageTests.cs" />
     <Compile Include="ProfilePageTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

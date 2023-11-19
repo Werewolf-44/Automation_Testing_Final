@@ -59,6 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="LoginHelper.cs" />
+    <Compile Include="Pages\CartPage.cs" />
     <Compile Include="Pages\LogoutPage.cs" />
     <Compile Include="Pages\ProfilePage.cs" />
     <Compile Include="Pages\SearchPage.cs" />

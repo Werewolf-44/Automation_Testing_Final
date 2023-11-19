@@ -1,27 +1,25 @@
 ﻿using OpenQA.Selenium.Support.UI;
 using OpenQA.Selenium;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using NUnit.Framework;
-using Microsoft.SqlServer.Server;
 
 public class SearchPage
-    {
+{
         private IWebDriver driver;
         private WebDriverWait wait;
+
     public SearchPage(IWebDriver driver)
     {
         this.driver = driver;
         this.wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
     }
+
     public void SelectSearch()
     {
         var selectSearch = driver.FindElement(By.XPath("//*[@id=\"search\"]"));
         selectSearch.Click();
     }
+
     public void EnterSearch()
     {
         string search = "Kompiuteris";
