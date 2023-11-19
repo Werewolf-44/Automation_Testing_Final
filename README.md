@@ -23,7 +23,7 @@
 6. Mouse over the shopping cart.
 7. Click the "Buy" button.
 8. Confirm that the shopping cart contains the expected item.
-9. Delete the item from the shopping cart and confirm the deletion.
+9. Delete the item from the shopping cart.
 
 ## Test 2: Filter Selection
 
@@ -52,7 +52,7 @@
 
 1. Mouse over the user profile.
 2. Click on "Contact Information."
-3. Confirm that the displayed contact information includes the expected name, last name, and email.
+3. Confirm that the displayed contact information includes the expected name (Ernestas), last name (Švedas), and email (ernestas.4test@gmail.com).
 
 ## Test 5: Search Functionality
 
