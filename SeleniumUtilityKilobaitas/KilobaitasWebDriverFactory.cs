@@ -24,7 +24,7 @@ public class KilobaitasWebDriverFactory
             {
                 // Capture screenshot on test failure
                 var screenshot = ((ITakesScreenshot)driver).GetScreenshot();
-                screenshot.SaveAsFile("screenshot.png", ScreenshotImageFormat.Png);
+                screenshot.SaveAsFile("screenshot.png");
             }
         }
         finally
