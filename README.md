@@ -1,6 +1,6 @@
 # Selenium Test Scenarios
 
-## Precondition for all tests: Login Helper
+## Precondition Test 0: Login Helper
 
 ### Steps
 
