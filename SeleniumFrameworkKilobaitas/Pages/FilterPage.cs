@@ -1,19 +1,15 @@
 ﻿using OpenQA.Selenium.Support.UI;
 using OpenQA.Selenium;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using OpenQA.Selenium.Interactions;
 using NUnit.Framework;
-using System.Xml.Linq;
 using System.Threading;
 
 public class FilterPage
 {
     private IWebDriver driver;
     private WebDriverWait wait;
+
     public FilterPage(IWebDriver driver)
     {
         this.driver = driver;

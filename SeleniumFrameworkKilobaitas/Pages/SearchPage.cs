@@ -5,8 +5,8 @@ using NUnit.Framework;
 
 public class SearchPage
 {
-        private IWebDriver driver;
-        private WebDriverWait wait;
+    private IWebDriver driver;
+    private WebDriverWait wait;
 
     public SearchPage(IWebDriver driver)
     {
