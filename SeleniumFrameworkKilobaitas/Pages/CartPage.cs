@@ -23,7 +23,7 @@ public class CartPage
 
     public void EnterSearch()
     {
-        string search = "Programa biurui Microsoft 365 Personal";
+        string search = "QQ2-00012";
         var enterSearch = driver.FindElement(By.XPath("//*[@id=\"search\"]"));
         enterSearch.SendKeys(search);
     }
