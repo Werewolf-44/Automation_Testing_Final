@@ -8,6 +8,10 @@ namespace SeleniumTestsKilobaitas
         [Test]
         public void TestProfilePage()
         {
+            string expectedName = "Ernestas";
+            string expectedLastName = "Švedas";
+            string expectedEmail = "ernestas.4test@gmail.com";
+
             // Use LoginHelper to perform login before testing logout
             LoginHelper loginHelper = new LoginHelper(driver);
             loginHelper.PerformLogin();
@@ -16,7 +20,10 @@ namespace SeleniumTestsKilobaitas
             ProfilePage profilePage = new ProfilePage(driver);
             profilePage.MouseOverProfile();
             profilePage.ClickContactInformation();
-            profilePage.ConfirmContactInformation();
+
+            Assert.That(profilePage.GetName(), Is.EqualTo(expectedName));
+            Assert.That(profilePage.GetLastName(), Is.EqualTo(expectedLastName));
+            Assert.That(profilePage.GetEmail(), Is.EqualTo(expectedEmail));
         }
     }
 

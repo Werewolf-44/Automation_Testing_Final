@@ -1,18 +1,16 @@
-﻿using OpenQA.Selenium.Support.UI;
-using OpenQA.Selenium;
-using System;
+﻿using OpenQA.Selenium;
 
 namespace SeleniumFrameworkKilobaitas.Pages
 {
     public class BasePage
     {
         protected IWebDriver driver;
-        protected WebDriverWait wait;
+        protected Common common;
 
         public BasePage(IWebDriver driver)
         {
             this.driver = driver;
-            this.wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+            this.common = new Common(driver);
         }
     }
 }
