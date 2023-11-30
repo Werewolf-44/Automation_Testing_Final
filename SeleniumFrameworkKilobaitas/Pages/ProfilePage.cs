@@ -1,19 +1,11 @@
 ﻿using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Interactions;
-using OpenQA.Selenium.Support.UI;
-using System;
+using SeleniumFrameworkKilobaitas.Pages;
 
-public class ProfilePage
+public class ProfilePage : BasePage
 {
-    private IWebDriver driver;
-    private WebDriverWait wait;
-
-    public ProfilePage(IWebDriver driver)
-    {
-        this.driver = driver;
-        this.wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
-    }
+    public ProfilePage(IWebDriver driver) : base(driver) { }
 
     public void MouseOverProfile()
     {
