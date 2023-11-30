@@ -64,7 +64,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common.cs" />
     <Compile Include="LoginHelper.cs" />
+    <Compile Include="Pages\BasePage.cs" />
     <Compile Include="Pages\CartPage.cs" />
     <Compile Include="Pages\FilterPage.cs" />
     <Compile Include="Pages\LogoutPage.cs" />
